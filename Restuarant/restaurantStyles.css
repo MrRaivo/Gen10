@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    margin: 25px;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+header {
+    text-align: center
+}
+
+footer {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+        .inputs {
+            margin: 5px;
+        }
+
+        input[type="radio"] {
+            margin-left: 30px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 30px;
+        }
+
+        #info {
+            vertical-align: top;
+        }
+    </style>
+    <title>Contact Us</title>
+</head>
+
+<header>
+    <h1>Cafe de Alex</h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="HomePage.html"><i class="material-icons">home</i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="ContactUs.html">Contact Us</a>
+        </li>
+    </ul>
+
+    <noscript>Please enable JavaScript for best results.</noscript>
+</header>
+
+<body>
+    <form action="/action_page.php" class="was-validated">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="email">email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter Email Address" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter Phone Number" class="form-control" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="inquiry">Inquiry:</label>
+            <select name="inquiry" id="inquiry">
+                <option value="catering">Catering</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info" rows="5" cols="33"></textarea>
+        </div>
+        <div class="radio">
+            <label for="option">Have you been to the restaurant? </label>
+            <label><input type="radio" id="option" name="option" value="No">No</label>
+            <label><input type="radio" name="option" value="Yes">Yes</label>
+        </div>
+        <div class="checkbox">
+            <label for="day">Best days to contact you: </label>
+            <label><input type="checkbox" id="day" name="day" value="Monday">M</label>
+            <label><input type="checkbox" id="day" name="day" value="Tuesday">T</label>
+            <label><input type="checkbox" id="day" name="day" value="Wednesday">W</label>
+            <label><input type="checkbox" id="day" name="day" value="Thursday">T</label>
+            <label><input type="checkbox" id="day" name="day" value="Friday">F</label>
+        </div>
+        <button type="button" class="inputs">Send Request</button>
+    </form>
+</body>
+
+<footer>
+    <p>123 ABC Street, Minneapolis, Minnesota, 55401</p>
+    <p>763-555-6357</p>
+</footer>
+
+</html>
